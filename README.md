@@ -100,7 +100,25 @@ including
 - ResNet50 training
 
 ---
+## 📊 Model Performance
 
+The project evaluates two state-of-the-art object detection models for dense retail shelf analysis.
+
+| Metric | YOLOv8 | RT-DETR |
+|--------|--------:|--------:|
+| mAP@0.5 | **0.9359** | 0.9029 |
+| mAP@0.5:0.95 | **0.6185** | 0.5933 |
+| Precision | **0.9079** | 0.8793 |
+| Recall | **0.8828** | 0.8702 |
+| F1 Score | **0.8952** | 0.8748 |
+| Inference Time | **38 ms** | 70 ms |
+
+### Performance Summary
+
+- ✅ YOLOv8 achieved the highest detection accuracy.
+- ✅ RT-DETR produced competitive results with strong localization quality.
+- ✅ YOLOv8 delivered the best balance between Precision and Recall.
+- ✅ The Streamlit application allows switching between both models for comparison.
 ## Results
 
 Evaluation results for both detection models are included in
