@@ -139,7 +139,23 @@ including
 - Model optimization for edge devices
 
 ---
+## 📸 Demo
 
+### Home
+
+![Home](results/screenshots/home.png)
+
+---
+
+### Dashboard
+
+![Dashboard](results/screenshots/dashboard.png)
+
+---
+
+### Analytics
+
+![Analytics](results/screenshots/analytics.png)
 ## License
 
 MIT License
