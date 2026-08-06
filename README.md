@@ -9,7 +9,7 @@ AI-powered retail shelf analysis system for **product detection, classification,
 ### Home Interface
 
 <p align="center">
-<img src="results/screenshots/Screenshot%202026-08-07%20022210.png" width="900">
+<img src="results/screenshots/home.png" width="900">
 </p>
 
 ---
@@ -17,7 +17,7 @@ AI-powered retail shelf analysis system for **product detection, classification,
 ### Audit Dashboard
 
 <p align="center">
-<img src="results/screenshots/Screenshot%202026-08-07%20022221.png" width="900">
+<img src="results/screenshots/dashboard.png" width="900">
 </p>
 
 ---
@@ -25,10 +25,9 @@ AI-powered retail shelf analysis system for **product detection, classification,
 ### Analytics
 
 <p align="center">
-<img src="results/screenshots/Screenshot%202026-08-07%20022231.png" width="900">
+<img src="results/screenshots/analytics.png" width="900">
 </p>
 
----
 
 ## 📖 Overview
 
