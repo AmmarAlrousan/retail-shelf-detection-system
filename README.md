@@ -1,37 +1,97 @@
 # 🛒 Retail Shelf Detection System
 
-AI-powered retail shelf monitoring system for dense product detection and classification using **YOLOv8**, **RT-DETR**, **ResNet50**, and **Streamlit**.
+AI-powered retail shelf analysis system for **product detection, classification, inventory auditing, and planogram compliance** using **YOLOv8, RT-DETR, ResNet50, and Streamlit**.
 
 ---
 
-## Overview
+## 📸 Demo
+
+### Home Interface
+
+<p align="center">
+<img src="results/screenshots/Screenshot%202026-08-07%20022210.png" width="900">
+</p>
+
+---
+
+### Audit Dashboard
+
+<p align="center">
+<img src="results/screenshots/Screenshot%202026-08-07%20022221.png" width="900">
+</p>
+
+---
+
+### Analytics
+
+<p align="center">
+<img src="results/screenshots/Screenshot%202026-08-07%20022231.png" width="900">
+</p>
+
+---
+
+## 📖 Overview
 
 This project provides an end-to-end intelligent retail shelf analysis pipeline capable of:
 
 - Detecting products on retail shelves
 - Classifying detected products
-- Comparing multiple detection models
+- Comparing multiple object detection models
+- Auditing inventory automatically
 - Running inference through an interactive Streamlit application
 
 The system was developed as an academic Computer Vision project focusing on dense object detection in retail environments.
 
 ---
 
-## Features
+## ✨ Features
 
 - Real-time product detection
 - YOLOv8 detector
 - RT-DETR detector
 - ResNet50 product classification
 - Interactive Streamlit interface
+- Inventory dashboard
+- SKU statistics
+- CSV report export
 - Visual prediction outputs
 - Model comparison
 
 ---
 
-## Project Structure
+## 📊 Model Performance
 
-```
+| Metric | YOLOv8 | RT-DETR |
+|--------|--------:|--------:|
+| mAP@0.5 | **0.9359** | 0.9029 |
+| mAP@0.5:0.95 | **0.6185** | 0.5933 |
+| Precision | **0.9079** | 0.8793 |
+| Recall | **0.8828** | 0.8702 |
+| F1 Score | **0.8952** | 0.8748 |
+| Inference Time | **38 ms** | 70 ms |
+
+### Highlights
+
+- 🥇 YOLOv8 achieved the highest detection accuracy.
+- ⚡ YOLOv8 was nearly twice as fast as RT-DETR.
+- 🎯 Both models generalized well on dense retail shelf datasets.
+- 🔄 The Streamlit application allows switching between both detection models.
+
+---
+
+## 🧠 Models Used
+
+| Model | Purpose |
+|--------|---------|
+| YOLOv8 | Product Detection |
+| RT-DETR | Dense Product Detection |
+| ResNet50 | Product Classification |
+
+---
+
+## 📂 Project Structure
+
+```text
 retail-shelf-detection-system
 │
 ├── app.py
@@ -55,17 +115,7 @@ retail-shelf-detection-system
 
 ---
 
-## Models Used
-
-| Model | Purpose |
-|--------|---------|
-| YOLOv8 | Product Detection |
-| RT-DETR | Dense Product Detection |
-| ResNet50 | Product Classification |
-
----
-
-## Installation
+## 🚀 Installation
 
 ```bash
 git clone https://github.com/AmmarAlrousan/retail-shelf-detection-system.git
@@ -77,7 +127,7 @@ pip install -r requirements.txt
 
 ---
 
-## Run
+## ▶️ Run
 
 ```bash
 streamlit run app.py
@@ -85,95 +135,66 @@ streamlit run app.py
 
 ---
 
-## Training
+## 🏋️ Training
 
 Training notebooks are available in:
 
-```
+```text
 notebooks/
 ```
 
-including
+including:
 
 - YOLOv8 training
 - RT-DETR training
 - ResNet50 training
 
 ---
-## 📊 Model Performance
 
-The project evaluates two state-of-the-art object detection models for dense retail shelf analysis.
+## 📈 Results
 
-| Metric | YOLOv8 | RT-DETR |
-|--------|--------:|--------:|
-| mAP@0.5 | **0.9359** | 0.9029 |
-| mAP@0.5:0.95 | **0.6185** | 0.5933 |
-| Precision | **0.9079** | 0.8793 |
-| Recall | **0.8828** | 0.8702 |
-| F1 Score | **0.8952** | 0.8748 |
-| Inference Time | **38 ms** | 70 ms |
+The repository includes evaluation outputs for both object detection models:
 
-### Performance Summary
+- Precision–Recall curves
+- Precision curves
+- Recall curves
+- F1-score curves
+- Confusion matrices
+- Validation prediction samples
+- Training logs
 
-- ✅ YOLOv8 achieved the highest detection accuracy.
-- ✅ RT-DETR produced competitive results with strong localization quality.
-- ✅ YOLOv8 delivered the best balance between Precision and Recall.
-- ✅ The Streamlit application allows switching between both models for comparison.
-## Results
+All evaluation files are available in:
 
-Evaluation results for both detection models are included in
-
-```
+```text
 results/
 ```
 
-including
-
-- Precision-Recall curves
-- F1 curves
-- Confusion matrices
-- Validation predictions
-
 ---
 
-## Technologies
+## 🛠 Technologies
 
 - Python
 - PyTorch
 - Ultralytics
 - RT-DETR
+- YOLOv8
+- ResNet50
 - OpenCV
 - Streamlit
-- ResNet50
 
 ---
 
-## Future Improvements
+## 🔮 Future Improvements
 
+- Video stream support
 - Multi-camera deployment
-- Inventory estimation
-- Product counting
+- Automatic inventory estimation
 - Shelf compliance monitoring
-- Model optimization for edge devices
-
----
-## 📸 Demo
-
-### Home
-
-![Home](results/screenshots/home.png)
+- Product counting
+- Edge-device optimization
 
 ---
 
-### Dashboard
-
-![Dashboard](results/screenshots/dashboard.png)
-
----
-
-### Analytics
-
-![Analytics](results/screenshots/analytics.png)
-## License
+## 📄 License
 
 MIT License
